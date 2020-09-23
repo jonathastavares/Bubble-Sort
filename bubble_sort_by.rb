@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 def bubble_sort_by(array)
   array.each_with_index do |x, i|
     array.each_with_index do |y, j|
