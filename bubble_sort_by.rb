@@ -4,15 +4,15 @@ def bubble_sort_by(array)
   array.each_with_index do |x, i|
     array.each_with_index do |y, j|
       if yield(y, x).positive?
-        store = array[i]
-        array[i] = array[j]
-        array[j] = store
+        array[i], array[j]= array[j], array[i]
       end
       next
     end
   end
 end
 
-bubble_sort_by(%w[hi hello hey]) do |left, right|
+result=bubble_sort_by(%w[hi hello hey]) do |left, right|
   left.length - right.length
 end
+
+print result
