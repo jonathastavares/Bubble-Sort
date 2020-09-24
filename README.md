@@ -3,6 +3,7 @@
 # Bubble Sort
 
 > A string bubble sort created using Ruby.
+![screenshot](/screenshot.jpg)
 
 ## Built With
 
