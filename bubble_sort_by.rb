@@ -1,8 +1,7 @@
 def bubble_sort_by(array)
   array.each_with_index do |x, i|
     array.each_with_index do |y, j|
-      if yield(y, x).positive? { array[i], array[j] = array[j], array[i] }
-      end
+      array[i], array[j] = array[j], array[i] if yield(y, x).positive?
       next
     end
   end
